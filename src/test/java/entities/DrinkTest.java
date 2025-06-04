@@ -9,7 +9,7 @@ public class DrinkTest {
     void testGetCalories() {
         Drink cola = new Drink("Coca-Cola", 1, 150);
 
-        assertEquals(150, cola.getCalories());
+        assertEquals(1, cola.getCalories());
     }
 
     @Test

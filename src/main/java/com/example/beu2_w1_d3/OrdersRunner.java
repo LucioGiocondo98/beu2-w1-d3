@@ -10,7 +10,7 @@ public class OrdersRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(beu2w1d1App);
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         try {
             Menu m = (Menu) ctx.getBean("menu");
             m.printMenu();
